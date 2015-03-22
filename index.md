@@ -12,15 +12,14 @@ author: Takuya
 
 
 
-#分散型じゃないバージョン管理システムといえば
+#分散型じゃないバージョン管理システム
 
 * Subversion
 
   シーポイントおなじみのバージョン管理システム
 
   svn.cpt.jpに対してcommitやupdateを行う。
-
-* オンライン必須
+  オンライン必須
 
 
 
@@ -53,8 +52,9 @@ A successful Git branching modelを実現するためのコマンド
 ブランチの自由度をなくすことでわかりやすく
 
 # メインブランチ
-  *master
-  *develop
+
+  * master
+  * develop
 
 # master
   リリース済みの最新ソースがあるブランチ
@@ -93,8 +93,6 @@ A successful Git branching modelを実現するためのコマンド
 
   リリース作業に必要な細かな作業を行うブランチ
 
-  使わないチームも多いらしい
-
   分岐元:develop
 
   マージ先: master develop
@@ -115,10 +113,13 @@ A successful Git branching modelを実現するためのコマンド
 # コマンドうつのめんどくさい
 
 GUIあるよ！
-* [SourceTree](https://www.atlassian.com/ja/software/sourcetree/overview)
+
+*  [SourceTree](https://www.atlassian.com/ja/software/sourcetree/overview)
   git-flowも使える便利なGUI
-* [TortoiseGit](https://code.google.com/p/tortoisegit/)
+
+*  [TortoiseGit](https://code.google.com/p/tortoisegit/)
   TortoiseSVNのGit版
+
 * [GitHub for Windows](https://windows.github.com/)
   Gitといえば[GitHub](https://github.com/)
 
@@ -126,7 +127,7 @@ GUIあるよ！
 
 [GitHub · Build software better, together.](https://github.com/)
 
-[Create, review and deploy code together | Better than GitHub | GitLab](https://about.gitlab.com/)
+[GitLab](https://about.gitlab.com/)
 
 [シーポイントのGitLab](http://gitlab.tida-square.co.jp)
 
