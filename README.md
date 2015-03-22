@@ -38,7 +38,7 @@ guardでindex.mdを監視
 
 LiveReloadでブラウザ更新(ChromeでLiveReloadのプラグインをインストールすること)
 
-```ruby:Guardfile
+```ruby
 guard 'shell' do
   watch(/index.md/) {|m|
     `slideshow b #{m[0]} -t shower ` }
@@ -46,6 +46,7 @@ end
 guard 'livereload' do
   watch (%r{index.html})
 end
+
 ```
 
 ```bash
