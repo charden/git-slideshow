@@ -1,0 +1,33 @@
+general:
+  branches:
+    ignore:
+      - gh-pages
+
+## Customize the test machine
+machine:
+
+  timezone:
+    Asia/Tokyo # Set the timezone
+
+## Customize dependencies
+dependencies:
+  override:
+    - bundle install: # note ':' here
+        timeout: 180 # fail if command has no output for 3 minutes
+  post:
+    - slideshow install shower
+
+## Customize test commands
+test:
+  override:
+   - slideshow build index.md -t shower
+
+deployment:
+  publish:
+    branch: gh-pages
+    commands:
+      - git config user.email "circleci@licht.com"
+      - git config user.name "CircleCI"
+      - git add -A .
+      - git commit -m "Build"
+      - git push origin gh-pages
