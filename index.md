@@ -108,7 +108,7 @@ A successful Git branching modelを実現するためのコマンド
 
 # git-flowはこのブランチモデルを簡単に使えるコマンド群
 
-[git-flow cheatsheet](http://danielkummer.Github.io/Git-flow-cheatsheet/index.ja_JP.html)
+[git-flow cheatsheet](http://danielkummer.github.io/git-flow-cheatsheet/index.ja_JP.html)
 
 # コマンドうつのめんどくさい
 
